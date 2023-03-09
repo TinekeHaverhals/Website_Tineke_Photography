@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tineke Photography</title>
+  <meta name="description" content="Photography">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main1.css" rel="STYLESHEET" type="text/css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+<nav id="navbar">
+  <div class="navbar-left">
+    <button id="navbar-btn" class="navbar-button">
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
+  <div class="navbar-right">
+  </div>
+</nav>
+<div class="menu">
+  <ul class="menu-items">
+    <li class="menu-item-wrapper"><i class="fas fa-asterisk"></i><a class="menu-item">Item 1</a></li>
+    <li class="menu-item-wrapper"><i class="fas fa-asterisk"></i><a class="menu-item">Item 2</a></li>
+    <li class="menu-item-wrapper"><i class="fas fa-asterisk"></i><a class="menu-item">Item 3</a></li>
+  </ul>
+  <div class="menu-bc"></div>
+</div>
+<header>
+  <div class="header-left">
+    <div class="header-row">
+      <div class=header-row-center>
+        <h3 class="header-row-title">Creating memories with you, for you! </h3>
+      </div>
+      <div class="header-row-bottom">
+        <button class="button-down">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="header-img-wrapper">
+      <div class="header-title-wrapper">
+        <div class="name">
+        <h1>Tineke <br>Photography</h1>
+        </div>
+      </div>
+      <div class="header-img-overlay"></div>
+    </div>
+  </div>
+</header>
+<main class="scroll1">
+
+  <div class="collage">
+    <!-- partial:index.partial.html -->
+    <div id="drag-container">
+      <div id="spin-container">
+        <img src="img/pages/duo_shoot/10.JPG" alt="collage_homepage_1">
+        <img src="img/pages/one_shoot/2.jpg" alt="collage_homepage_2">
+        <img src="img/pages/animal_shoot/7.JPG" alt="collage_homepage_3">
+        <img src="img/pages/duo_shoot/9.jpg" alt="collage_homepage_4">
+        <img src="img/pages/one_shoot/8.jpg" alt="collage_homepage_5">
+        <img src="img/pages/animal_shoot/15.jpg" alt="collage_homepage_6">
+        <img src="img/pages/one_shoot/19.jpg" alt="collage_homepage_7">
+        <img src="img/pages/one_shoot/20.jpg" alt="collage_homepage_8">
+        <img src="img/7.jpg" alt="collage_homepage_9">
+        <img src="img/pages/animal_shoot/11.jpg" alt="collage_homepage_10">
+      </div>
+      <div id="ground"></div>
+    </div>
+  </div>
+</main>
+
+<div class="card-container">
+  <div class="card u-clearfix">
+    <div class="card-body">
+      <h2 class="card-title">Trouwe Viervoeters</h2>
+      <span class="card-description subtle">
+        Fotosessies op locatie in natuurlijk licht <br>
+        Portret- en actiefoto's mogelijk <br>
+        Baasjes zijn mee welkom op de foto <br><br>
+        Elk dier is uniek. Elke relatie tussen mens en dier is enig en onverklaarbaar. <br><br>
+       Herinneringen vervagen, maar foto’s vereeuwigen. <br><br>
+        <button class="button button1"><a href="pages/animal_shoot.html">Portfolio</a></button>
+      </span>
+    </div>
+    <img src="img/pages/animal_shoot/2.jpg" alt="" height="454" width="316" class="card-media" />
+  </div>
+  <div class="card-shadow"></div>
+</div>
+
+
+<div class="card-container" >
+  <div class="card u-clearfix">
+    <div class="card-body">
+      <h2 class="card-title">Friends, Family & Love</h2>
+      <span class="card-description subtle">
+        Maak je veel foto's van je kinderen of ben jij altijd diegene die op vriendenuitjes of familiefeesten de foto's maakt
+        maar sta je er dan <br>nooit zelf eens bij op? Dat is zo herkenbaar voor velen terwijl het net heel waardevol is om samen <br>
+        mooie foto's te hebben waar jullie allemaal opstaan. Daarom zie ik een shoot niet als een kost maar als een investering.<br>
+        En geloof me, dit is er eentje zonder risico's.<br>
+        Het resultaat zal je doen lachen en kan je voor de rest van je leven koesteren.<br>
+        <br>
+        <button class="button button1"><a href="pages/Friends_Family_Love.html">Portfolio</a></button>
+      </span>
+      <br><br>
+    </div>
+    <img src="img/pages/duo_shoot/8.jpg" alt="" height="454" width="316" class="card-media" />
+  </div>
+  <div class="card-shadow"></div>
+</div>
+
+<br><br>
+<footer>
+  <p>Tineke Photography<br><br>
+    U kan me altijd bereiken via het onderstaande mailadres of via instagram.<br><br>
+    <a href="mailto:tinekehaverhals@hotmail.com">Stuur me een mailtje! </a></p>
+  <button class="buttonInstagram"><a href="https://www.instagram.com/tineke_photography/"><i class='fab fa-instagram'></i> Instagram </a></button><br><br>
+</footer>
+<script>
+
+  var radius = 400; // how big of the radius
+  var autoRotate = true; // auto rotate or not
+  var rotateSpeed = -60; // unit: seconds/360 degrees
+  var imgWidth = 120; // width of images (unit: px)
+  var imgHeight = 170; // height of images (unit: px)
+
+  // ===================== start =======================
+  // animation start after 1000 miliseconds
+  setTimeout(init, 1000);
+
+  var odrag = document.getElementById('drag-container');
+  var ospin = document.getElementById('spin-container');
+  var aImg = ospin.getElementsByTagName('img');
+  var aVid = ospin.getElementsByTagName('video');
+  var aEle = [...aImg, ...aVid]; // combine 2 arrays
+
+  // Size of images
+  ospin.style.width = imgWidth + "px";
+  ospin.style.height = imgHeight + "px";
+
+  // Size of ground - depend on radius
+  var ground = document.getElementById('ground');
+  ground.style.width = radius * 3 + "px";
+  ground.style.height = radius * 3 + "px";
+
+  function init(delayTime) {
+    for (var i = 0; i < aEle.length; i++) {
+      aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+      aEle[i].style.transition = "transform 1s";
+      aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
+    }
+  }
+
+  function applyTranform(obj) {
+    // Constrain the angle of camera (between 0 and 180)
+    if(tY > 180) tY = 180;
+    if(tY < 0) tY = 0;
+
+    // Apply the angle
+    obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
+  }
+
+  function playSpin(yes) {
+    ospin.style.animationPlayState = (yes?'running':'paused');
+  }
+
+  var desX = 0,
+    desY = 0,
+    tX = 0,
+    tY = 10;
+
+  // auto spin
+  if (autoRotate) {
+    var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
+    ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
+  }
+
+  // setup events
+  document.onpointerdown = function (e) {
+    clearInterval(odrag.timer);
+    e = e || window.event;
+    var sX = e.clientX,
+      sY = e.clientY;
+
+    this.onpointermove = function (e) {
+      e = e || window.event;
+      var nX = e.clientX,
+        nY = e.clientY;
+      desX = nX - sX;
+      desY = nY - sY;
+      tX += desX * 0.1;
+      tY += desY * 0.1;
+      applyTranform(odrag);
+      sX = nX;
+      sY = nY;
+    };
+
+    this.onpointerup = function (e) {
+      odrag.timer = setInterval(function () {
+        desX *= 0.95;
+        desY *= 0.95;
+        tX += desX * 0.1;
+        tY += desY * 0.1;
+        applyTranform(odrag);
+        playSpin(false);
+        if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+          clearInterval(odrag.timer);
+          playSpin(true);
+        }
+      }, 17);
+      this.onpointermove = this.onpointerup = null;
+    };
+
+    return false;
+  };
+
+  document.onmousewheel = function(e) {
+    e = e || window.event;
+    var d = e.wheelDelta / 20 || -e.detail;
+    radius += d;
+    init(1);
+  };
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Friends Family Love</title>
+  <meta name="description" content="Photography">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/pages.css" rel="STYLESHEET" type="text/css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+<nav id="navbar">
+  <div class="navbar-left">
+    <button id="navbar-btn" class="navbar-button">
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
+  <div class="navbar-right">
+  </div>
+</nav>
+<div class="menu">
+  <ul class="menu-items">
+    <li class="menu-item-wrapper"><i class="fas fa-asterisk"></i><a class="menu-item">Item 1</a></li>
+    <li class="menu-item-wrapper"><i class="fas fa-asterisk"></i><a class="menu-item">Item 2</a></li>
+    <li class="menu-item-wrapper"><i class="fas fa-asterisk"></i><a class="menu-item">Item 3</a></li>
+  </ul>
+  <div class="menu-bc"></div>
+</div>
+<div class="intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-message">
+          <h1>Friends, Family & Love</h1>
+          <h3>Maak je veel foto's van je kinderen of ben jij altijd diegene die op vriendenuitjes of familiefeesten de foto's maakt
+            maar sta je er dan <br><br>nooit zelf eens bij op? Dat is zo herkenbaar voor velen terwijl het net heel waardevol is om samen <br><br>
+            mooie foto's te hebben waar jullie allemaal opstaan. Daarom zie ik een shoot niet als een kost maar als een investering.<br><br>
+            En geloof me, dit is er eentje zonder risico's.<br><br>
+            Het resultaat zal je doen lachen en kan je voor de rest van je leven koesteren.<br>
+            <br></h3>
+          <hr class="intro-divider">
+          <ul class="list-inline intro-social-buttons">
+            <a class="instagram" href="https://www.instagram.com/tineke_photography/"><i class='fab fa-instagram'></i> Instragram </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="../img/pages/duo_shoot/17.jpg" alt="slideshow_animal1" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/pages/duo_shoot/15.jpg" alt="slideshow_animal2" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/pages/duo_shoot/19.jpg" alt="slideshow_animal3" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/pages/duo_shoot/16.jpg" alt="slideshow_animal4" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/pages/duo_shoot/20.jpg" alt="slideshow_animal5" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/pages/duo_shoot/18.jpg" alt="slideshow_animal6" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/pages/one_shoot/27.jpg" alt="slideshow_animal7" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+<br>
+<br>
+<br>
+<br>
+
+<div id="gallery" class="container-fluid">
+  <img src="../img/pages/duo_shoot/8.jpg" alt="gallery_animal1" class="img-responsive">
+  <img src="../img/pages/one_shoot/20.jpg" alt="gallery_animal2"  class="img-responsive">
+  <img src="../img/pages/one_shoot/2.jpg" alt="gallery_animal3"  class="img-responsive">
+  <img src="../img/pages/one_shoot/8.jpg" alt="gallery_animal4"  class="img-responsive">
+  <img src="../img/pages/duo_shoot/12.jpg" alt="gallery_animal5"  class="img-responsive">
+  <img src="../img/pages/one_shoot/21.jpg" alt="gallery_animal6"  class="img-responsive">
+  <img src="../img/pages/duo_shoot/11.JPG" alt="gallery_animal7"  class="img-responsive">
+  <img src="../img/pages/one_shoot/26.jpg" alt="gallery_animal8"  class="img-responsive">
+  <img src="../img/pages/one_shoot/22.jpg" alt="gallery_animal9"  class="img-responsive">
+  <img src="../img/pages/one_shoot/23.jpg" alt="gallery_animal10"  class="img-responsive">
+  <img src="../img/pages/one_shoot/24.jpg" alt="gallery_animal11"  class="img-responsive">
+  <img src="../img/pages/duo_shoot/9.jpg" alt="gallery_animal12"  class="img-responsive">
+  <img src="../img/pages/duo_shoot/10.JPG" alt="gallery_animal13"  class="img-responsive">
+  <img src="../img/pages/one_shoot/25.jpg" alt="gallery_animal14"  class="img-responsive">
+  <img src="../img/pages/one_shoot/19.jpg" alt="gallery_animal15"  class="img-responsive">
+  <img src="../img/pages/duo_shoot/14.jpg" alt="gallery_animal16"  class="img-responsive">
+</div>
+
+<footer>
+  <p>Tineke Photography<br><br>
+    U kan me altijd bereiken via het onderstaande mailadres of via instagram.<br><br>
+    <a href="mailto:tinekehaverhals@hotmail.com">Stuur me een mailtje! </a></p>
+  <button class="buttonInstagram"><a href="https://www.instagram.com/tineke_photography/"><i class='fab fa-instagram'></i> Instagram </a></button><br><br>
+</footer>
+
+</body>
+</html>
